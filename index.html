@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You❤️</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Comic Sans MS", cursive;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    h1 { color: #ff4d88; }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: #ff4d88;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+.main-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(255, 77, 136, 0.4);
+
+}
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hello Areeba❤️</h1>
+    <p>I made something cute for you 🥺</p>
+
+    <button onclick="goNext()">Agr Himmat hai toh click krein 💌
+</button>
+<img src="forfirstpage.png" class="main-img" alt="cute image">
+
+  </div>
+
+  <script>
+    function goNext() {
+      window.location.href = "questions.html";
+    }
+  </script>
+
+</body>
+</html>

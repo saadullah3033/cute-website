@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You Made It 💖</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffe6f0, #fff);
+      font-family: "Comic Sans MS", cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      width: 340px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #ff4d88;
+    }
+
+    .answer {
+      background: #fff0f6;
+      padding: 10px;
+      border-radius: 12px;
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: none;
+      background: #ff4d88;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Yayyy 💕</h2>
+  <p>Congrats tum yahan tak pohanch gayi 🥹💗  
+  iska matlab tum ne waqai time diya.</p>
+
+  <div class="answer" id="a1"></div>
+  <div class="answer" id="a2"></div>
+  <div class="answer" id="a3"></div>
+
+  <button onclick="goNext()">Final Surprise 💌</button>
+</div>
+
+<script>
+  document.getElementById("a1").innerText =
+    "💖 Cute thing: " + (localStorage.getItem("ans1") || "");
+
+  document.getElementById("a2").innerText =
+    "💕 Reason: " + (localStorage.getItem("ans2") || "");
+
+  document.getElementById("a3").innerText =
+    "💞 Us in one word: " + (localStorage.getItem("ans3") || "");
+
+  function goNext() {
+    window.location.href = "letter.html";
+  }
+</script>
+
+</body>
+</html>

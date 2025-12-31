@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Questions 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #fff0f6, #ffe6f0);
+      font-family: "Comic Sans MS", cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #ff4d88;
+      margin-bottom: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border-radius: 30px;
+      border: none;
+      background: #ff4d88;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+
+.main-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(255, 77, 136, 0.4);
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="box">
+
+<img src="forsecondpage.jpg" class="main-img" alt="cute image">
+
+    <h2>Answer honestly 💗</h2>
+
+    <input id="q1" placeholder="Ap mujhse kitna pyaar karti hai? 🥺">
+    <input id="q2" placeholder="ek Adat joh ap meri badalna chahti 2026 mei? 💕">
+    <input id="q3" placeholder="Humare rishte ki sbse achi bt? 💞">
+
+    <!-- IMPORTANT: type="button" -->
+    <button type="button" onclick="goNext()">Continue 💌</button>
+  </div>
+
+  <script>
+    function goNext() {
+      // save answers
+      localStorage.setItem("ans1", document.getElementById("q1").value);
+      localStorage.setItem("ans2", document.getElementById("q2").value);
+      localStorage.setItem("ans3", document.getElementById("q3").value);
+
+      // redirect
+      window.location.href = "result.html";
+    }
+  </script>
+
+</body>
+</html>
